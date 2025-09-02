@@ -105,4 +105,56 @@ document.addEventListener('DOMContentLoaded', () => {
     const avatar = document.querySelector('.avatar');
     avatar.classList.add('animate');
   }, 1500);
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skills.forEach(skill => {
+  const el = document.createElement('div');
+  el.className = 'skill-item';
+  el.innerHTML = `
+    <video src="${skill.video}" autoplay loop muted playsinline></video>
+    <span>${skill.name}</span>
+  `;
+  const video = el.querySelector('video');
+
+  // للكمبيوتر
+  el.addEventListener('mouseenter', () => { video.muted = false; video.play(); });
+  el.addEventListener('mouseleave', () => { video.muted = true; });
+
+  // للموبايل / التابلت
+  el.addEventListener('click', () => {
+    if(video.muted) {
+      video.muted = false;
+      video.play();
+    } else {
+      video.muted = true;
+      video.pause();
+    }
+  });
+
+  skillsList.appendChild(el);
+});
+
+
+
+
+
