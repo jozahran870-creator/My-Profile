@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 🟠 المشاريع (4 كروت)
 const projects = [
   { title: 'كلمات زهران', img: 'img/5.jpeg', link: 'https://jozahran870-creator.github.io/Zahran_Words/' },
-  { title: 'المصحف الإلكتروني', img: 'img/6.jpeg', link: 'https://jozahran870-creator.github.io/-/' },
+  { title: 'المصحف الإلكتروني', img: 'img/6.jpeg', link: 'https://jozahran870-creator.github.io/Quran/' },
   { title: 'السبحة الإلكترونية', img: 'img/7.jpeg', link: 'https://jozahran870-creator.github.io/Sebha/' },
   { title: 'القطة المشمشية', img: 'img/8.jpeg', link: 'https://example4.com' }
 ];
@@ -153,6 +153,7 @@ skills.forEach(skill => {
 
   skillsList.appendChild(el);
 });
+
 
 
 
